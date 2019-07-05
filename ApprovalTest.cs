@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using Xunit;
 
-namespace gildedroserefactoringkata
+namespace GildedRoseRefactoringKata
 {
     public class ApprovalTest
     {

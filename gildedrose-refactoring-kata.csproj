@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <StartupObject>gildedroserefactoringkata.Program</StartupObject>
-    <RootNamespace>gildedroserefactoringkata</RootNamespace>
+    <StartupObject>GildedRoseRefactoringKata.Program</StartupObject>
+    <RootNamespace>GildedRoseRefactoringKata</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

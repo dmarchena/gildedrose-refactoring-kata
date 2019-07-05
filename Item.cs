@@ -1,4 +1,4 @@
-﻿namespace gildedroserefactoringkata
+﻿namespace GildedRoseRefactoringKata
 {
     public class Item
     {
