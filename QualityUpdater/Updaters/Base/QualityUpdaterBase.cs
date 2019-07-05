@@ -1,6 +1,6 @@
 namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
 {
-    public abstract class QualityUpdaterBase: IQualityUpdater
+    public abstract class QualityUpdaterBase : IQualityUpdater
     {
         protected readonly Item Item;
 
@@ -9,8 +9,9 @@ namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
             Item = item;
         }
 
-        protected abstract void CustomUpdate();
         public abstract void Update();
+
+        protected abstract void CustomUpdate();
 
         protected void ClassicalQualityUpdate()
         {
@@ -20,5 +21,12 @@ namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
             }
         }
 
+        protected void KeepLimits()
+        {
+            if (Item.Quality < 0)
+            {
+                Item.Quality = 0;
+            }
+        }
     }
 }

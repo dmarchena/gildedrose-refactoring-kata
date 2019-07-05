@@ -9,6 +9,7 @@ namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
         public override void Update()
         {
             CustomUpdate();
+            KeepLimits();
         }
     }
 }

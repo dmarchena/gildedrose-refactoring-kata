@@ -1,8 +1,8 @@
 namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
 {
-    public class SulfurasQualityUpdater: LegendaryObjectQualityUpdaterBase
+    public class SulfurasQualityUpdater : LegendaryObjectQualityUpdaterBase
     {
-        public SulfurasQualityUpdater(Item item): base(item)
+        public SulfurasQualityUpdater(Item item) : base(item)
         {
         }
 

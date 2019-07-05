@@ -11,6 +11,7 @@ namespace GildedRoseRefactoringKata.QualityUpdater
                 case "Aged Brie": return new AgedBrieQualityUpdater(item);
                 case "Backstage passes to a TAFKAL80ETC concert": return new BackstagePassesQualityUpdater(item);
                 case "Sulfuras, Hand of Ragnaros": return new SulfurasQualityUpdater(item);
+                case "Conjured Mana Cake": return new ConjuredQualityUpdater(item);
                 default: return new DefaultQualityUpdater(item);
             }
         }

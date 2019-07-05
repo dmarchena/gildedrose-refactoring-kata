@@ -13,14 +13,14 @@ namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
                 Item.Quality = 0;
                 return;
             }
-            
+
             ClassicalQualityUpdate();
 
             if (Item.Quality >= 50)
             {
                 return;
             }
-            
+
             if (Item.SellIn < 10)
             {
                 Item.Quality += 1;
@@ -30,8 +30,6 @@ namespace GildedRoseRefactoringKata.QualityUpdater.Updaters
             {
                 Item.Quality += 1;
             }
-
-
         }
     }
 }

@@ -12,18 +12,15 @@ namespace GildedRoseRefactoringKata
         {
             var lines = File.ReadAllLines("ThirtyDays.txt");
 
-            StringBuilder fakeoutput = new StringBuilder();
+            var fakeoutput = new StringBuilder();
             Console.SetOut(new StringWriter(fakeoutput));
             Console.SetIn(new StringReader($"a{Environment.NewLine}"));
 
             Program.Main(new string[] { });
-            String output = fakeoutput.ToString();
+            var output = fakeoutput.ToString();
 
             var outputLines = output.Split(Environment.NewLine);
-            for(var i = 0; i<Math.Min(lines.Length, outputLines.Length); i++) 
-            {
-                Assert.Equal(lines[i], outputLines[i]);
-            }
+            for (var i = 0; i < Math.Min(lines.Length, outputLines.Length); i++) Assert.Equal(lines[i], outputLines[i]);
         }
     }
 }
