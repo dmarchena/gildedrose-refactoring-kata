@@ -53,22 +53,22 @@ const updateStrategies = {
   })
 }
 
-const getMixinForItem = (function () {
+const getMixinForItemWithName = (function () {
   const agedBrie = 'Aged Brie';
   const backstagePasses = 'Backstage passes to a TAFKAL80ETC concert';
   const sulfuras = 'Sulfuras, Hand of Ragnaros';
 
-  const updateStrategiesByFirstWord = {
+  const updateStrategiesByItemName = {
     [agedBrie]: updateStrategies.agedBrieStrategyMixin,
     [backstagePasses]: updateStrategies.backstagePassesStrategyMixin,
     [sulfuras]: updateStrategies.sulfurasStrategyMixin
   };
 
-  return item => 
-    updateStrategiesByFirstWord[item.name] ||
+  return name => 
+    updateStrategiesByItemName[name] ||
     updateStrategies.defaultStrategyMixin;
 })();
 
 module.exports = {
-  getMixinForItem
+  getMixinForItemWithName
 }

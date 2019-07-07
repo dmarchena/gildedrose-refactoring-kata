@@ -1,16 +1,8 @@
-import { getMixinForItem } from './item/update_quality_mixin';
-
-class Item {
-  constructor(name, sellIn, quality) {
-    this.name = name;
-    this.sellIn = sellIn;
-    this.quality = quality;
-  }
-}
+import { Item } from "./item";
 
 class Shop {
   constructor(items = []) {
-    this.items = items.map(item => Object.assign(item, getMixinForItem(item)));
+    this.items = items;
   }
   updateQuality() {
     this.items = this.items.map(item => item.updateQuality());
