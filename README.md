@@ -10,3 +10,7 @@ Original kata source code can be fetched from <https://github.com/emilybache/Gil
 2. Once you have access, get the code in the language you prefer from the original repository of the kata: <https://github.com/emilybache/GildedRose-Refactoring-Kata>
 3. Create a branch with your name and upload **JUST** the code in your selected language
 4. Refactor the code in you branch and enjoy
+
+## Better Code Hub results of this solution
+
+[![BCH compliance](https://bettercodehub.com/edge/badge/dmarchena/gildedrose-refactoring-kata?branch=master)](https://bettercodehub.com/)
